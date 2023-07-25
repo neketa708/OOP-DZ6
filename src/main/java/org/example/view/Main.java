@@ -5,7 +5,7 @@ import org.example.model.NumCalcul;
 
 public class Main {
     public static void main(String[] args) {
-        NumCalcul numCalcul = new NumCalcul("1","2");
+        NumCalcul numCalcul = new NumCalcul("3","2");
         System.out.println(numCalcul.sum());
         System.out.println(numCalcul.sub());
         System.out.println(numCalcul.multi());

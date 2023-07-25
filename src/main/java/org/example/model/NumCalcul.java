@@ -1,17 +1,15 @@
 package org.example.model;
 
-public class NumCalcul implements Number{
-    private String num1;
-    private String num2;
+public class NumCalcul extends Znac{
     private double znac1;
     private double znac2;
 
     public NumCalcul(String num1, String num2) {
-        this.num1 = num1;
-        this.num2 = num2;
+        super(num1, num2);
         this.znac1 = Double.parseDouble(num1);
         this.znac2 = Double.parseDouble(num2);
     }
+
 
     @Override
     public String sum() {

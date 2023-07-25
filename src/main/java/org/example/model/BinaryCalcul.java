@@ -1,17 +1,15 @@
 package org.example.model;
 
-public class BinaryCalcul implements Number{
-    private String binary1;
-    private String binary2;
+public class BinaryCalcul extends Znac{
     private int decimal1;
     private int decimal2;
 
-    public BinaryCalcul(String binary1, String binary2) {
-        this.binary1 = binary1;
-        this.binary2 = binary2;
-        this.decimal1 = Integer.parseInt(binary1,2);
-        this.decimal2 = Integer.parseInt(binary2,2);
+    public BinaryCalcul(String num1, String num2) {
+        super(num1, num2);
+        this.decimal1 = Integer.parseInt(num1,2);
+        this.decimal2 = Integer.parseInt(num2,2);
     }
+
     @Override
     public String sum() {
         int sumDecimal = decimal1+decimal2;
